@@ -1,6 +1,5 @@
 # NeRFNav
-An end to end pipeline to control and navigate a drone by visual perception and 3d reconstruction using NeRF.\
-![Alt text]() 
+An end to end pipeline to control and navigate a drone by visual perception and 3d reconstruction using NeRF.
 # NeRFNav: Autonomous Drone Navigation in Neural Radiance Fields
 
 ![NeRFNav Simulation](https://github.com/Saurabh2403-code/NeRFNav/blob/39606b56eca0a84e0115c0295bf976bf34a9a3ca/output/Visual%20path%20with%20the%20rendered%20object.png)
