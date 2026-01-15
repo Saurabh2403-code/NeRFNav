@@ -197,8 +197,8 @@ ax.plot(smooth_path_np[:,0], smooth_path_np[:,1], smooth_path_np[:,2],
 
 ax.plot(real_path[:,0], real_path[:,1], real_path[:,2], 
         color='blue', linewidth=3, label='Actual Flight')
-
-ax.voxels(collision_map, edgecolor='k', alpha=0.05) 
+is_obstacle=collision_map==1
+ax.voxels(is_obstacle, edgecolor='k', alpha=0.05) 
 
 ax.scatter(*start, color='green', s=100, label='Start')
 ax.scatter(*end, color='purple', s=100, label='Goal')
@@ -208,4 +208,5 @@ ax.set_ylabel('Y')
 ax.set_zlabel('Z')
 ax.set_title("Simulated Drone Flight")
 plt.legend()
+plt.savefig('Visual path with the rendered object.png',dpi=300,bbox_inches='tight')
 plt.show()
